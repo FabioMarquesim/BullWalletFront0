@@ -1,0 +1,52 @@
+.sideMenuContainer{
+    background-color: var(--color-background-sideMenu);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo{
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.logo img{
+    width: 57px;
+}
+
+.logo img:hover{
+    cursor: pointer;
+}
+
+.logo h1 {
+    color: white;
+}
+
+.sideMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.sideMenu a{
+    list-style: none;
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: var(--white-itens);
+    transition: 0.5s;
+    margin-bottom: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sideMenu a:hover{
+    color: var(--color-links);
+
+}
+.profilePhoto{
+    width:50%;
+    height:10%;
+}

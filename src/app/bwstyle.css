@@ -1,0 +1,11 @@
+/* Alfa Factor Style */
+
+:root{
+    --color-title: #110920;
+    --color-links: #653695;
+    --color-background-sideMenu: #110920;
+    --color-background: #F2F1E9;
+    --color-backgroud-li: rgba(199,199,199,0.3);
+    --background-list-item: #FFFFFF;
+    --white-itens: #ffffff;
+  }
