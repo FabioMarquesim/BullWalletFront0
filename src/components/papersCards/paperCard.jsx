@@ -24,20 +24,20 @@ export default function paperCard(props){
                     <tbody>
                         <tr>
                             <td className="rowTitle">Posição atual</td>
-                            <td>0,00</td>
-                            <td>0,00</td>
+                            <td>{props.amount}</td>
                             <td>0</td>
+                            <td>{props.qtd}</td>
                         </tr>
                         <tr>
                             <td className="rowTitle">Posição ideal</td>
                             <td>0,00</td>
-                            <td>0,00</td>
+                            <td>0</td>
                             <td>0</td>
                         </tr>
                         <tr>
                             <td className="rowTitle">Ajuste Posições</td>
                             <td>0,00</td>
-                            <td>0,00</td>
+                            <td>0</td>
                             <td>0</td>
                         </tr>
                     </tbody>

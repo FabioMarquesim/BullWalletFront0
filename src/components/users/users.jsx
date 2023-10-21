@@ -4,9 +4,15 @@ import api from '../../api/api';
 function ListaUsuarios() {
   const [usuarios, setUsuarios] = useState([]);
 
+  const config = {
+    headers:{
+      "Access-Control-Allow-Origin": "*"
+    }
+  };
+
   useEffect(() => {
     async function fetchUsuarios() {
-      const response = await api.get('/users');
+      const response = await api.get('/users',config);
       setUsuarios(response.data);
     }
 

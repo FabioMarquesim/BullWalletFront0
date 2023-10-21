@@ -1,10 +1,10 @@
 import React from 'react'
 import './App.css'
 import './app/bwstyle.css'
+import './components/papersCards/style.css'
 
 import SideMenu from './components/sideMenu/sideMenu'
-import PaperCard from './components/papersCards/paperCard'
-import Users from './components/users/users'
+import Papers from './components/papersCards/papers'
 
 const  gestaoPortifolio = ()=> {
     return(
@@ -51,18 +51,9 @@ const  gestaoPortifolio = ()=> {
                 </section>
                 <section className="papersContainer">
                     <h1>Papéis</h1>
-                    <p>
-                      <Users/>
-                    </p>
                 </section>
                 <section className="papersDetailsContainer">
-                    <PaperCard broker="XCV" ticker="B3SA3"/>
-                    <PaperCard broker="FTR" ticker="PETZ3"/>
-                    <PaperCard broker="FTR" ticker="ITUB4"/>
-                    <PaperCard broker="BBS" ticker="TIMS3"/>
-                    <PaperCard broker="XCV" ticker="MGLU3"/>
-                    <PaperCard broker="XCV" ticker="SANB11"/>
-         
+                    <Papers/>
                     <div className="paperDetails paperAddDetails">
                         <span>+</span>
                         <span>Adicionar um novo papel</span>
