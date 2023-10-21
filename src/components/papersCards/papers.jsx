@@ -1,10 +1,21 @@
+import api from '../../api/api';
 import PaperCard from './paperCard'
-import { useFetch } from '../../hooks/useFetch';
+import { useQuery } from 'react-query'
 
 function ListPapers() {
 
-    // Consulta API utilizando hook useFetch
-    const { data:papers, isFetching } = useFetch('/papers');
+    // myPapers eh o id em cache
+    const { data: papers, isFetching } = useQuery('myPapers', async () => {
+        const response = await api.get('http://localhost:5000/papers')
+
+        return response.data;
+    }, {
+        // Se quiser desabilitar o autorefresh
+        //refetchOnWindowFocus: false,
+
+        // Tempo de cache 30sec
+        staleTime: 1000 * 30,
+    })
   
     return (
         isFetching ? console.log("ToDo: Animacao de Loading") :
