@@ -1,0 +1,25 @@
+.patrimonyData p{
+    color:var(--color-links);
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  #totalAvailable{
+    display: flex;
+    align-items: center;
+    
+    
+  }
+  #totalAvailable h2{
+    padding-right: 25%;
+  }
+  
+  #totalInvested{ 
+    display: flex;
+    align-items: center;
+  
+    
+  }
+  #totalInvested h2{
+    padding-right: 28%;
+  }

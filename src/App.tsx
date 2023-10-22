@@ -5,6 +5,7 @@ import './components/papersCards/style.css'
 
 import SideMenu from './components/sideMenu/sideMenu'
 import Papers from './components/papersCards/papers'
+import Patrimony from './components/patrimony/patrimony'
 
 const  gestaoPortifolio = ()=> {
     return(
@@ -37,16 +38,7 @@ const  gestaoPortifolio = ()=> {
                     </section>
                     <section className="patrimonyContainer">
                         <h1>Patrimônio</h1>
-                        <div className="patrimonyData">
-                            <div id="totalAvailable">
-                                <h2>Saldo disponível</h2>
-                                <p><span>R$ </span>1,500.00</p>
-                            </div>
-                            <div id="totalInvested" >
-                                <h2>Total investido</h2>
-                                <p><span>R$ </span>150,000.00</p>
-                            </div>
-                        </div>
+                        <Patrimony/>
                     </section>
                 </section>
                 <section className="papersContainer">

@@ -6,7 +6,7 @@ function ListPapers() {
 
     // myPapers eh o id em cache
     const { data: papers, isFetching } = useQuery('myPapers', async () => {
-        const response = await api.get('http://localhost:5000/papers')
+        const response = await api.get('/papers')
 
         return response.data;
     }, {
@@ -20,7 +20,7 @@ function ListPapers() {
     return (
         isFetching ? console.log("ToDo: Animacao de Loading") :
         (papers?.map((paper) => (
-          <PaperCard broker={paper.broker} ticker={paper.ticker} amount={paper.amount} qtd={paper.qtd}/>
+          <PaperCard broker={paper.brokerName} ticker={paper.ticker} amount={paper.amount} qtd={paper.qtd}/>
         )))
     );
   }
