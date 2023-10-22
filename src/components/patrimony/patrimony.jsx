@@ -15,16 +15,16 @@ function ShowPatrimony() {
         // Tempo de cache 30sec
         staleTime: 1000 * 30,
     })
-  
+
     return (
         <div className="patrimonyData">
             <div id="totalAvailable">
                 <h2>Saldo disponível</h2>
-                <p><span>R$ </span>{ isFetching ? console.log("ToDo: Animacao de Loading") : allBalance }</p>
+                <p><span>R$ </span>{ isFetching ? '0.00' : (allBalance[0]['totalBalance']) }</p>
             </div>
             <div id="totalInvested" >
                 <h2>Total investido</h2>
-                <p><span>R$ </span>150,000.00</p>
+                <p><span>R$ </span>{ isFetching ? '0.00' : (allBalance[0]['totalBalanceInvested']) }</p>
             </div>
         </div>   
     );
