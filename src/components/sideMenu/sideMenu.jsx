@@ -15,7 +15,7 @@ export default function sideMenu(){
                 
             </nav>
             <div className="profilePhoto">
-                <img src="" alt="foto perfil"></img>
+                <img src="#" alt="foto perfil"></img>
             </div>
         </section>
     )

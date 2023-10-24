@@ -50,3 +50,7 @@
     width:50%;
     height:10%;
 }
+
+.profilePhoto > img {
+    width: 75%;
+}
